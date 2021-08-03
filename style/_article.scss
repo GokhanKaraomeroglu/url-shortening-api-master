@@ -1,0 +1,156 @@
+.api-call-box {
+    background-color: white;
+    padding: 1rem;
+    max-width: 90%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.api-call-box-top {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid $Gray;    
+}
+
+.api-call-box-top h6 {
+    font-size: .85rem;
+    color:$VeryDarkBlue;
+    width: 95%;
+    height: 1rem;
+    overflow: hidden;
+}
+
+.api-call-box-bottom p {
+    font-size: .9rem;
+    color:$Cyan;
+    padding-top: .5rem;
+}
+
+.api-call-box-bottom button {
+    border: 0;
+    width: 100%;
+    background-color: $Cyan;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: .75rem;
+    padding: .4rem 0rem;
+}
+
+article {
+    padding-bottom: 4rem;
+    background-color: hsla(258, 7%, 63%, 0.212);
+}
+
+.article-header {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.article-header h2 {
+    color:$VeryDarkViolet;
+}
+
+.article-header p {
+    font-size: .9rem;
+    max-width: 27.5rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: .5rem;
+    color:$GrayishViolet;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    max-width: 20rem;
+    width: 90%;
+    height: 16rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 2rem 0rem;
+    border-radius: 5px;
+}
+
+.card-icon {
+    position: absolute;
+    margin-top: -3.5rem;
+    background-color:$DarkViolet;
+    padding: .75rem 1.1rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.card-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.card-content {
+    margin-top:2rem;
+}
+
+.card-content p {    
+    font-size: .9rem;
+    max-width: 16rem;
+    margin: 0 auto;
+    margin-top: .75rem;
+    width: 20rem;
+    line-height: 1.6;
+}
+
+@media (min-width:768px) {
+
+    .article-header h2 {
+        font-size: 2rem;
+    }
+    
+    .article-header p {
+        font-size: .9rem;
+        max-width: 25rem;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .article-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    .article-header p {
+        font-size: 1.1rem;
+        max-width: 30rem;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+    .card {
+        text-align: start;
+    }
+
+    .card-01 {
+        margin-top:-1rem;
+    }
+
+    .card-02 {
+        margin-top: 3rem;
+    }
+
+    .card-03 {
+        margin-top: 5rem;
+    }
+
+}

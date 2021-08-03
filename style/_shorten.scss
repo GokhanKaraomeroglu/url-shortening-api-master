@@ -1,0 +1,59 @@
+.shorten {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    padding: 5vw;
+    background: url(/images/bg-shorten-mobile.svg) no-repeat top right;
+    background-color: $DarkViolet;
+    background-size: 75%;
+    border-radius: 8px;
+}
+
+.shorten input {
+    font-family: 'Poppins',sans-serif;
+}
+
+#input-text {
+    border: none;
+    color:$Gray;
+    font-size: .9rem;
+    padding:.5rem .8rem;
+}
+
+#input-submit {
+    margin-top: 1rem;
+    background-color: $Cyan;
+    color:white;
+    border: 0;
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+@media (min-width:768px) {
+    
+    .shorten {
+        max-width: 75%;
+        padding: 4vw;
+    }
+
+}
+
+@media (min-width:768px) {
+    
+    .shorten {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #input-text {
+        width: 80%;
+        margin-right: 5%;
+    }
+
+    #input-submit {
+        width: 15%;
+    }
+}

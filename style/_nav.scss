@@ -1,0 +1,29 @@
+nav {
+    padding: 10% 5%;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-logo img {
+    width: 40vw;
+    height: auto;
+    max-width: 7.5rem;
+}
+.menu-items {
+    display: none;
+}
+.menu-bar {
+    display: block;
+    width: 22.5px;
+    height: 3px;
+    background-color: $GrayishViolet;
+    margin-top: .35rem;
+}
+
+@media (min-width:768px) {
+    
+    nav {
+        padding:3rem 10%;
+    }
+}
