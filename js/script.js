@@ -1,7 +1,18 @@
+var menu = document.querySelector('.menu-items')
+
+document.querySelector('.menu-container').addEventListener('click', function() {
+
+    if (menu.style.display == "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+});
+
 let box_count = 0;
 function shortenLinks() {
 
-    let request = new XMLHttpRequest(); 
+    var request = new XMLHttpRequest(); 
     var input = document.getElementById('input-text').value; 
     request.open("GET", "https://api.shrtco.de/v2/shorten?url=" + input); 
     request.send(); 
@@ -68,7 +79,8 @@ function shortenLinks() {
 
             } else {
                 console.log(`error ${request.status} ${request.statusText}`);
-                reject(error);
+                
+
             }
         }
 

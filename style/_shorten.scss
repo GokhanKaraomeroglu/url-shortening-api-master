@@ -1,15 +1,21 @@
 .shorten {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    margin-top: -9rem;
+}
+
+.shorten-card {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 5rem;
     box-sizing: border-box;
     padding: 5vw;
     background: url(/images/bg-shorten-mobile.svg) no-repeat top right;
     background-color: $DarkViolet;
     background-size: 75%;
     border-radius: 8px;
+    width: 90%;
 }
 
 .shorten input {
@@ -20,7 +26,13 @@
     border: none;
     color:$Gray;
     font-size: .9rem;
-    padding:.5rem .8rem;
+    padding:.75rem .8rem;
+    width:90%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #input-submit {
@@ -30,30 +42,39 @@
     border: 0;
     padding: .5rem;
     font-size: 1.1rem;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
+
 
 @media (min-width:768px) {
     
-    .shorten {
-        max-width: 75%;
-        padding: 4vw;
+    .shorten-card {
+        display: block;
+        padding: 0rem;
+        max-width: 60rem;
     }
 
-}
-
-@media (min-width:768px) {
-    
-    .shorten {
-        flex-direction: row;
+    .shorten-input {
+        display: flex;
         align-items: center;
+        width: 93%; 
+        padding: 2rem;
+    }
+    
+    #input-submit {
+        margin: 0;
+        width: 25%;
+        margin-left: 1rem;
+        padding: .8rem 1rem;
     }
 
     #input-text {
-        width: 80%;
-        margin-right: 5%;
+        padding: 1rem 1.5rem;        
     }
 
-    #input-submit {
-        width: 15%;
-    }
 }

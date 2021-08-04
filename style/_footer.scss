@@ -51,12 +51,20 @@ footer li h5 {
 
 .footer-social {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 10rem;
     margin: 0 auto;
     margin-top: 3rem;
 }
 
+.footer-social svg {
+    fill:white;
+}
+
+.footer-social svg:hover {
+    fill:$Cyan;
+}
 
 @media (min-width:1024px) {
     
